@@ -18,14 +18,6 @@
     echo "<h1 style=\"color:red;\"> My name is {$name}. I'm a {$skill} Developer. I Love to {$hobby}.</h1>";
 
 
-
-
-
-
-
-
-
-
     ?>
 </body>
 </html>
