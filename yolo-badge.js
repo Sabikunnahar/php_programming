@@ -1,1 +1,1 @@
-consol.log("Hello for yolo lo")
+const pair = "For Pair-Extraordinaire Badge"
