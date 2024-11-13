@@ -22,29 +22,29 @@
 </head>
 <body>
 
-    <div class="user-form w-25 mx-auto my-5">
+    <div class="user-form w-25 mx-auto my-5 p-5">
 
-    <?php 
-        // Method-1: you can view data in this way by reordering the array.
-        // echo"<pre>";
-        // print_r($_POST);
-        // echo"</pre>";
+        <?php 
+            // Method-1: you can view data in this way by reordering the array.
+            // echo"<pre>";
+            // print_r($_POST);
+            // echo"</pre>";
 
-        // // Method-2: you can view data in this way by reordering the array.
-        // echo $name = $_POST['name'];
-        // echo "<br>";
-        // echo $year = $_POST['year'];
-        // echo "<br>";
+            // // Method-2: you can view data in this way by reordering the array.
+            // echo $name = $_POST['name'];
+            // echo "<br>";
+            // echo $year = $_POST['year'];
+            // echo "<br>";
 
-        // If it get value in submit checkbox, it will call a data
-    if (isset($_POST['submit'])){
-        $name = $_POST['name'];
-        $year = $_POST['year'];
-        echo ageCall($name , $year);
-    }
+            // If it get value in submit checkbox, it will call a data
+        if (isset($_POST['submit'])){
+            $name = $_POST['name'];
+            $year = $_POST['year'];
+            echo ageCall($name , $year);
+        }
 
 
-    ?>
+        ?>
         <div class="card shadow">
             <div class="card-header">
                 <h2 class="card-title text-center">Check Your Age</h2>

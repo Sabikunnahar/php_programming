@@ -6,7 +6,26 @@
 function ageCall($name, $year){
 
     $age = 2024 - $year;
-    return "<p class=\"alert alert-success\">Hi {$name}, Your age is {$age} and ".CheckUserStatus($age)."<p>";
+    $alert_type = '';
+    switch (CheckUserStatus($age)) {
+        case 'Child':
+            $alert_type = 'success';
+            break;
+        case 'Kid':
+            $alert_type = 'primary';
+            break;
+        case 'Teenager':
+            $alert_type = 'info';
+            break;
+        case 'Young':
+            $alert_type = 'warning';
+            break;
+        case 'Old':
+            $alert_type = 'dark';
+            break;
+    }
+    
+    return "<p class=\"alert alert-{$alert_type}\">Hi {$name}, Your age is {$age} and You are a".CheckUserStatus($age)."<p>"; //you can call a value with {} and for function it's need to concat
 }
 
 /**
@@ -14,18 +33,18 @@ function ageCall($name, $year){
  */
 function CheckUserStatus($age){
     if($age>0 && $age < 9){
-        return " You are a Kid";
+        return "Child";
     }
     else if($age>10 && $age < 17){
-        return " You are a Older Kid";
+        return "Kid";
     }
     else if($age>18 && $age < 18){
-        return " You are a Teenager";
+        return "Teenager";
     }
     else if($age>19 && $age < 35){
-        return " You are a Young";
+        return "Young";
     }
     else{
-        return " You are a Old";
+        return "Old";
     }
 }
