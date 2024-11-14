@@ -24,7 +24,7 @@ function ageCall($name, $year){
             $alert_type = 'dark';
             break;
     }
-    
+
     return "<p class=\"alert alert-{$alert_type}\">Hi {$name}, Your age is {$age} and You are a".CheckUserStatus($age)."<p>"; //you can call a value with {} and for function it's need to concat
 }
 
@@ -48,3 +48,8 @@ function CheckUserStatus($age){
         return "Old";
     }
 }
+
+/**
+ * Form data functions
+ * 
+ */
