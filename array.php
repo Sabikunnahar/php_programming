@@ -6,7 +6,7 @@ $food = ['burger', 'pizza', 'fry', 'coke', 'apple'];
 foreach($food as $item){
         echo $item."<br>";
         }
-        echo"==============================="."<br>";
+        echo"===============================1"."<br>";
 
 // asseociation array
 $name = [                                  
@@ -19,7 +19,7 @@ $name = [
 foreach($name as $key => $value){
         echo $key."-".$value."<br>";
         }
-echo"==============================="."<br>";
+echo"===============================2"."<br>";
 
 //Multi dymentional array
 $addresses = [                                  
@@ -39,7 +39,7 @@ $arry_count =[
 echo "The count of array count is: ";
 echo count($arry_count);
 echo "<br/>";
-echo"==============================="."<br>";
+echo"===============================3"."<br>";
 
 //in_array()     
 if(in_array('lacchi', $food)){
@@ -48,26 +48,26 @@ if(in_array('lacchi', $food)){
 else{
         print("No, There is not")."<br>";
 }
-echo"==============================="."<br>";
+echo"===============================4"."<br>";
 
 //sort function( for assending)
 sort($food);
 print_r($food);
 
 echo"<br>";
-echo"==============================="."<br>";
+echo"===============================5"."<br>";
 
 //rsort function( for desending  or reverse)
 rsort($food);
 print_r($food);
 echo "<br/>";
-echo"==============================="."<br>";
+echo"===============================6"."<br>";
 
 //arsort function for associate arry( for desending  or reverse)
 arsort($food);
 print_r($food);
 echo "<br/>";
-echo"==============================="."<br>";
+echo"===============================7"."<br>";
 
 //arry push, pop
 $fast_food = ['burger', 'pizza', 'fry', 'coke', 'apple']; 
@@ -86,27 +86,27 @@ echo"<br/>";
 array_unshift($fast_food, 'rui');// this function will add value in the first value in the array
 print_r($fast_food);
 echo"<br/>";
-echo"==============================="."<br>";
+echo"===============================8"."<br>";
 
 //array reverse for reversing any arry
 $reverse = array_reverse($fast_food);
 print_r($reverse);
 echo"<br/>";
-echo"==============================="."<br>";
+echo"===============================9"."<br>";
 
 //array unique is for uniqe the items where there are multiple of same products
 $food_items =['nachos', 'chicken fry', 'beef', 'burger', 'nachos', 'beef'];
 $unique_foods = array_unique($food_items);
 print_r($unique_foods);
 echo"<br/>";
-echo"==============================="."<br>";
+echo"===============================10"."<br>";
 
 //array rand is for random choose like lottery
 $cricketers =['sakib', 'tamim', 'rubel', 'mashrafi', 'mahmud', 'kayes'];
 $random_cricketers = array_rand($cricketers);
 echo $cricketers[$random_cricketers];
 echo"<br/>";
-echo"==============================="."<br>";
+echo"===============================11"."<br>";
 
 //array splice is to find item in the middle
 $food_items =['sakib', 'tamim', 'rubel', 'mashrafi', 'mahmud', 'kayes'];
@@ -116,7 +116,7 @@ array_splice($food_items, 2, 0, ['jahan', 'alo']); //default it deletes but you 
 echo "<pre>";
 print_r($food_items);
 echo"<br/>";
-echo"==============================="."<br>";
+echo"===============================12"."<br>";
 
 
 
